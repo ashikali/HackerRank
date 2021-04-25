@@ -37,17 +37,16 @@ function isFactor(a,b){
 }
 
 function getTotalX(a, b) {
-    // Write your code here
 
-    var factors = [];
-    a.sort;b.sort;
-    for(var i=a.length-1;i<100;i++){
+    var factors = [];a.sort;b.sort;
+    for(var i=a[a.length-1];i<=b[0];i++){
 
-	if( a.every((x) => isFactor(i,x)) && b.every( (x) => isFactor(x,i))) 
-		factors.push(i);
+        if( a.every((x) => isFactor(i,x)) && b.every( (x) => isFactor(x,i)))
+                factors.push(i);
 
     }
-   return factors.length;
+   return factors.length;				
+
    
 }
 
